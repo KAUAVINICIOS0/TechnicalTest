@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ModalGR</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="testTecnico2.js" defer></script>
+</head>
+<body>
+    <p>valor da multa por dia:</p>
+    <input type="number" id="vlMulta" step="0.01" min="0" oninput="formatarValor(this)" required >
+
+    <p>quantidade de dias de atraso:</p>
+    <input type="number" id="qtdAtraso" min="0" required>
+
+    <button onclick="calcularMulta()">calcular Multa</button>
+    <p id="resultado"></p>
+</body>
+</html>
